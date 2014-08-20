@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Timerもどき - loopa.me Blog</title>
+  <title>Timerもどき - loopa.memo</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="HTAアプリケーションを作ることになったので、timerみたいなものを作ってみた。 index.html 1
+  <meta name="description" content="HTAアプリケーションを作ることになったので、timerみたいなものを作ってみた。 index.html1
 2
 3
 4
@@ -42,7 +42,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="loopa.me Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="loopa.memo" type="application/atom+xml">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -146,9 +146,7 @@
 
 <div class="entry-content"><p><code>HTAアプリケーション</code>を作ることになったので、timerみたいなものを作ってみた。</p>
 
-<p><code>index.html</code></p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -180,9 +178,7 @@
 </span><span class="line"><span class="nt">&lt;/html&gt;</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><code>main.js</code></p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>main.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -228,7 +224,7 @@
 <span class="line-number">44</span>
 <span class="line-number">45</span>
 <span class="line-number">46</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span><span class="line">  <span class="c1">// body...</span>
 </span><span class="line">  <span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
 </span><span class="line">  <span class="kd">var</span> <span class="nx">now2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
@@ -275,6 +271,7 @@
 </span><span class="line">
 </span><span class="line"><span class="p">});</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <p><code>json</code>形式のファイルをカレントディクトリに配置して、
 読み込めるようにしたため、項目は自由に設定できるかな？</p>
 
@@ -290,19 +287,20 @@
 <span class="line-number">10</span>
 <span class="line-number">11</span>
 <span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="p">[</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option1&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option2&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option3&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option4&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option5&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option6&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option7&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option8&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option9option9&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">}</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">[</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option1&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option2&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option3&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option4&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option5&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option6&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option7&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option8&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option9option9&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">}</span>
 </span><span class="line">
 </span><span class="line"><span class="p">]</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <p>まだ、ブラウザだけでしか確認していないから、<code>HTAアプリケーション</code>は未確認です。</p>
 
 </div>
@@ -345,6 +343,8 @@
     <p class="meta">
       
       
+        <a class="basic-alignment right" href="/blog/2014/08/20/new-post1/" title="Next Post: bundle exe rspecできないよ(rspec3.0.2)">bundle exe rspecできないよ(rspec3.0.2) &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -354,8 +354,8 @@
 <aside class="sidebar">
   
     <section id="titles">
-  <a href="http://loopa.github.io" title="loopa.me Blog"><img id="logo" src="http://loopa.github.io/images/logo.png" /></a>
-  <h1 id="site_title"><a href="http://loopa.github.io" title="loopa.me Blog">loopa.me Blog</a></h1>
+  <a href="http://loopa.github.io" title="loopa.memo"><img id="logo" src="http://loopa.github.io/images/logo.png" /></a>
+  <h1 id="site_title"><a href="http://loopa.github.io" title="loopa.memo">loopa.memo</a></h1>
   <h3 id="site_subtitle">memos.</h3>
 </section>
 
@@ -386,6 +386,10 @@
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/08/20/new-post1/">bundle exe rspecできないよ(rspec3.0.2)</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/08/19/movable-type-to-octopress/">Timerもどき</a>

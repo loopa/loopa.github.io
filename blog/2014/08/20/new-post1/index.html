@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>about - loopa.memo</title>
+  <title>bundle exe rspecできないよ(rspec3.0.2) - loopa.memo</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" About Tweet loopa.memo memos. Home Archives About Feed Recent Posts bundle exe rspecできないよ(rspec3.0.2) Timerもどき ">
+  <meta name="description" content="bundle exec rspec実行すると以下のエラーが発生して困ったが
+stackoverflowに記事発見！
+.rspecから—warnings抜いたら解決しました。 warning: loading in progress, circular require considered &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://loopa.github.io/about/">
+  <link rel="canonical" href="http://loopa.github.io/blog/2014/08/20/new-post1/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
    <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -100,32 +102,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">About</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-25T10:25:00+09:00" pubdate data-updated="true"></time></p>
-  </header>
-  
-  
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Bundle Exe rspecできないよ(rspec3.0.2)</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -137,21 +122,79 @@
   
 
 
-<time datetime="2014-01-25T10:25:00+09:00" pubdate data-updated="true"></time>
+<time datetime="2014-08-20T21:41:47+09:00" pubdate data-updated="true"></time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>bundle exec rspec実行すると以下のエラーが発生して困ったが
+<a href="http://stackoverflow.com/questions/24003316/guard-with-rspec-on-rails-4-giving-a-lot-of-warnings">stackoverflow</a>に記事発見！
+.rspecから—warnings抜いたら解決しました。</p>
+
+<p><code>warning: loading in progress, circular require considered harmful</code></p>
+
+<p>before:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">--color
+</span><span class="line">--warnings
+</span><span class="line">--require spec_helper
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>after:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">--color
+</span><span class="line">--require spec_helper</span></code></pre></td></tr></table></div></figure></notextile></div>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://loopa.github.io/about/index.html" data-via="" data-counturl="http://loopa.github.io/about/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-20T21:41:47+09:00" pubdate data-updated="true"></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://loopa.github.io/blog/2014/08/20/new-post1/" data-via="" data-counturl="http://loopa.github.io/blog/2014/08/20/new-post1/" >Tweet</a>
   
   
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2014/08/19/movable-type-to-octopress/" title="Previous Post: Timerもどき">&laquo; Timerもどき</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

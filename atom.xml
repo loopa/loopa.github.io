@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[loopa.me Blog]]></title>
+  <title><![CDATA[loopa.memo]]></title>
   <link href="http://loopa.github.io/atom.xml" rel="self"/>
   <link href="http://loopa.github.io/"/>
-  <updated>2014-08-20T00:00:54+09:00</updated>
+  <updated>2014-08-20T22:05:30+09:00</updated>
   <id>http://loopa.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,15 +14,43 @@
 
   
   <entry>
+    <title type="html"><![CDATA[bundle exe rspecできないよ(rspec3.0.2)]]></title>
+    <link href="http://loopa.github.io/blog/2014/08/20/new-post1/"/>
+    <updated>2014-08-20T21:41:47+09:00</updated>
+    <id>http://loopa.github.io/blog/2014/08/20/new-post1</id>
+    <content type="html"><![CDATA[<p>bundle exec rspec実行すると以下のエラーが発生して困ったが
+<a href="http://stackoverflow.com/questions/24003316/guard-with-rspec-on-rails-4-giving-a-lot-of-warnings">stackoverflow</a>に記事発見！
+.rspecから—warnings抜いたら解決しました。</p>
+
+<p><code>warning: loading in progress, circular require considered harmful</code></p>
+
+<p>before:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">--color
+</span><span class="line">--warnings
+</span><span class="line">--require spec_helper
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>after:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">--color
+</span><span class="line">--require spec_helper</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Timerもどき]]></title>
     <link href="http://loopa.github.io/blog/2014/08/19/movable-type-to-octopress/"/>
     <updated>2014-08-19T22:58:18+09:00</updated>
     <id>http://loopa.github.io/blog/2014/08/19/movable-type-to-octopress</id>
     <content type="html"><![CDATA[<p><code>HTAアプリケーション</code>を作ることになったので、timerみたいなものを作ってみた。</p>
 
-<p><code>index.html</code></p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -54,9 +82,7 @@
 </span><span class="line"><span class="nt">&lt;/html&gt;</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><code>main.js</code></p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>main.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -102,7 +128,7 @@
 <span class="line-number">44</span>
 <span class="line-number">45</span>
 <span class="line-number">46</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span><span class="line">  <span class="c1">// body...</span>
 </span><span class="line">  <span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
 </span><span class="line">  <span class="kd">var</span> <span class="nx">now2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
@@ -149,6 +175,7 @@
 </span><span class="line">
 </span><span class="line"><span class="p">});</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <p><code>json</code>形式のファイルをカレントディクトリに配置して、
 読み込めるようにしたため、項目は自由に設定できるかな？</p>
 
@@ -164,19 +191,20 @@
 <span class="line-number">10</span>
 <span class="line-number">11</span>
 <span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="p">[</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option1&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option2&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option3&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option4&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option5&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option6&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option7&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option8&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
-</span><span class="line"><span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="s2">&quot;option9option9&quot;</span><span class="p">,</span><span class="s2">&quot;color&quot;</span><span class="o">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">}</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">[</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option1&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option2&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option3&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option4&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option5&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option6&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option7&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option8&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">},</span>
+</span><span class="line"><span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="s2">&quot;option9option9&quot;</span><span class="p">,</span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;#999000&quot;</span><span class="p">}</span>
 </span><span class="line">
 </span><span class="line"><span class="p">]</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <p>まだ、ブラウザだけでしか確認していないから、<code>HTAアプリケーション</code>は未確認です。</p>
 
 ]]></content>

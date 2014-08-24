@@ -4,7 +4,7 @@
   <title><![CDATA[loopa.memo]]></title>
   <link href="http://loopa.github.io/atom.xml" rel="self"/>
   <link href="http://loopa.github.io/"/>
-  <updated>2014-08-25T08:05:51+09:00</updated>
+  <updated>2014-08-25T08:07:23+09:00</updated>
   <id>http://loopa.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -371,29 +371,29 @@
 <span class="line-number">22</span>
 <span class="line-number">23</span>
 <span class="line-number">24</span>
-</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="err">.btn</span><span class="p">{</span>
-</span><span class="line">    <span class="err">text-align:</span> <span class="err">center;</span>
-</span><span class="line">    <span class="err">color:</span> <span class="err">#000000;</span>
-</span><span class="line">    <span class="err">font-family:</span> <span class="err">&#39;Arial&#39;;</span>
-</span><span class="line">    <span class="err">font-size:</span> <span class="err">18px;</span>
-</span><span class="line">    <span class="err">background:</span> <span class="err">#ffffff;</span>
-</span><span class="line">    <span class="err">background:</span> <span class="err">-moz-linear-gradient(top,</span> <span class="err">#ffffff</span> <span class="err">0%,</span> <span class="err">#f6f6f6</span> <span class="err">100%);</span>
-</span><span class="line">    <span class="err">background:</span> <span class="err">-webkit-gradient(linear,</span> <span class="err">left</span> <span class="err">top,</span> <span class="err">left</span> <span class="err">bottom,</span> <span class="err">color-stop(0%,#ffffff),</span> <span class="err">color-stop(100%,#f6f6f6));</span>
-</span><span class="line">    <span class="err">background:</span> <span class="err">-webkit-linear-gradient(top,</span> <span class="err">#ffffff</span> <span class="err">0%,#f6f6f6</span> <span class="err">100%);</span>
-</span><span class="line">    <span class="err">background:</span> <span class="err">-o-linear-gradient(top,</span> <span class="err">#ffffff</span> <span class="err">0%,#f6f6f6</span> <span class="err">100%);</span>
-</span><span class="line">    <span class="err">background:</span> <span class="err">-ms-linear-gradient(top,</span> <span class="err">#ffffff</span> <span class="err">0%,#f6f6f6</span> <span class="err">100%);</span>
-</span><span class="line">    <span class="err">background:</span> <span class="err">linear-gradient(to</span> <span class="err">bottom,</span> <span class="err">#ffffff</span> <span class="err">0%,#f6f6f6</span> <span class="err">100%);</span>
-</span><span class="line">    <span class="err">filter:</span> <span class="err">progid:DXImageTransform.Microsoft.gradient(</span> <span class="err">startColorstr=&#39;#ffffff&#39;,</span>  <span class="err">endColorstr=&#39;#f6f6f6&#39;,</span> <span class="err">GradientType=0</span> <span class="err">);</span>
-</span><span class="line">    <span class="err">border-width:</span> <span class="err">2px;</span>
-</span><span class="line">    <span class="err">border-style:</span> <span class="err">solid;</span>
-</span><span class="line">    <span class="err">border-color:</span> <span class="err">#dcdcdc;</span>
-</span><span class="line">    <span class="err">border-radius:</span> <span class="err">6px;</span>
+</pre></td><td class="code"><pre><code class="css"><span class="line"><span class="nc">.btn</span><span class="p">{</span>
+</span><span class="line">    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+</span><span class="line">    <span class="k">color</span><span class="o">:</span> <span class="m">#000000</span><span class="p">;</span>
+</span><span class="line">    <span class="k">font-family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">;</span>
+</span><span class="line">    <span class="k">font-size</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
+</span><span class="line">    <span class="k">background</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span>
+</span><span class="line">    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0%</span><span class="o">,</span> <span class="m">#f6f6f6</span> <span class="m">100%</span><span class="p">);</span>
+</span><span class="line">    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">linear</span><span class="o">,</span> <span class="k">left</span> <span class="k">top</span><span class="o">,</span> <span class="k">left</span> <span class="k">bottom</span><span class="o">,</span> <span class="k">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="m">0%</span><span class="o">,</span><span class="m">#ffffff</span><span class="p">)</span><span class="o">,</span> <span class="k">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="m">100%</span><span class="o">,</span><span class="m">#f6f6f6</span><span class="p">));</span>
+</span><span class="line">    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0%</span><span class="o">,</span><span class="m">#f6f6f6</span> <span class="m">100%</span><span class="p">);</span>
+</span><span class="line">    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0%</span><span class="o">,</span><span class="m">#f6f6f6</span> <span class="m">100%</span><span class="p">);</span>
+</span><span class="line">    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0%</span><span class="o">,</span><span class="m">#f6f6f6</span> <span class="m">100%</span><span class="p">);</span>
+</span><span class="line">    <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">to</span> <span class="k">bottom</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0%</span><span class="o">,</span><span class="m">#f6f6f6</span> <span class="m">100%</span><span class="p">);</span>
+</span><span class="line">    <span class="n">filter</span><span class="o">:</span> <span class="n">progid</span><span class="o">:</span><span class="n">DXImageTransform</span><span class="o">.</span><span class="n">Microsoft</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span> <span class="n">startColorstr</span><span class="o">=</span><span class="s1">&#39;#ffffff&#39;</span><span class="o">,</span>  <span class="n">endColorstr</span><span class="o">=</span><span class="s1">&#39;#f6f6f6&#39;</span><span class="o">,</span> <span class="n">GradientType</span><span class="o">=</span><span class="m">0</span> <span class="p">);</span>
+</span><span class="line">    <span class="k">border-width</span><span class="o">:</span> <span class="m">2px</span><span class="p">;</span>
+</span><span class="line">    <span class="k">border-style</span><span class="o">:</span> <span class="k">solid</span><span class="p">;</span>
+</span><span class="line">    <span class="k">border-color</span><span class="o">:</span> <span class="m">#dcdcdc</span><span class="p">;</span>
+</span><span class="line">    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
 </span><span class="line"><span class="p">}</span>
-</span><span class="line"><span class="err">#group</span> <span class="err">&gt;</span> <span class="err">.btn.active</span><span class="p">{</span>
-</span><span class="line">  <span class="err">background-color:</span> <span class="err">yellow;</span>
+</span><span class="line"><span class="nf">#group</span> <span class="o">&gt;</span> <span class="nc">.btn.active</span><span class="p">{</span>
+</span><span class="line">  <span class="k">background-color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span>
 </span><span class="line"><span class="p">}</span>
-</span><span class="line"><span class="err">.btn-toolbar&gt;.btn,</span> <span class="err">.btn-toolbar&gt;.btn-group,</span> <span class="err">.btn-toolbar&gt;.input-group</span><span class="p">{</span>
-</span><span class="line">  <span class="err">margin-left:</span> <span class="err">0px;</span>
+</span><span class="line"><span class="nc">.btn-toolbar</span><span class="o">&gt;</span><span class="nc">.btn</span><span class="o">,</span> <span class="nc">.btn-toolbar</span><span class="o">&gt;</span><span class="nc">.btn-group</span><span class="o">,</span> <span class="nc">.btn-toolbar</span><span class="o">&gt;</span><span class="nc">.input-group</span><span class="p">{</span>
+</span><span class="line">  <span class="k">margin-left</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
 </span><span class="line"><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 

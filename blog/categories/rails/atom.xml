@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rails | loopa.memo]]></title>
+  <link href="http://loopa.github.io/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://loopa.github.io/"/>
+  <updated>2014-08-25T08:05:51+09:00</updated>
+  <id>http://loopa.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[bundle exe rspecできないよ(rspec3.0.2)]]></title>
+    <link href="http://loopa.github.io/blog/2014/08/20/new-post1/"/>
+    <updated>2014-08-20T21:41:47+09:00</updated>
+    <id>http://loopa.github.io/blog/2014/08/20/new-post1</id>
+    <content type="html"><![CDATA[<p>bundle exec rspec実行すると以下のエラーが発生して困ったが
+<a href="http://stackoverflow.com/questions/24003316/guard-with-rspec-on-rails-4-giving-a-lot-of-warnings">stackoverflow</a>に記事発見！
+.rspecから—warnings抜いたら解決しました。</p>
+
+<p><code>warning: loading in progress, circular require considered harmful</code></p>
+
+<p>before:</p>
+
+<p>&#8220;`
+–color
+–warnings
+–require spec_helper</p>
+
+<p>&#8220;`</p>
+
+<p>after:</p>
+
+<p><code>
+--color
+--require spec_helper
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
